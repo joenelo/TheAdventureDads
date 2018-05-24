@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsE-bK-iiL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Podcasts-->
+        <scene sceneID="52M-Ql-geX">
+            <objects>
+                <navigationController id="tsE-bK-iiL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="icon-podcast" id="AoS-Ma-4sw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QT4-r2-LzE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aEJ-LN-B3f" kind="relationship" relationship="rootViewController" id="L8F-5j-Fdi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFR-Yf-9Bi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="-26"/>
+        </scene>
+        <!--Podcast Page Controller-->
+        <scene sceneID="qoa-Hk-bDx">
+            <objects>
+                <viewController storyboardIdentifier="PodcastPage" id="aEJ-LN-B3f" customClass="PodcastPageController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1C-bm-s8s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pa2-yt-byN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nPI-dE-jgo">
+                                    <size key="itemSize" width="186" height="178"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qbb-wB-hP9">
+                                        <rect key="frame" x="94.5" y="0.0" width="186" height="178"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="178"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBa-JJ-E2g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="133"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Which Podcst" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Du-TTz">
+                                                    <rect key="frame" x="0.0" y="132" width="186" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="186" height="178"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hQR-vJ-qXB" firstAttribute="trailing" secondItem="pa2-yt-byN" secondAttribute="trailing" id="FWA-jg-TTN"/>
+                            <constraint firstItem="pa2-yt-byN" firstAttribute="top" secondItem="hQR-vJ-qXB" secondAttribute="top" id="JtQ-bB-Q1D"/>
+                            <constraint firstItem="hQR-vJ-qXB" firstAttribute="bottom" secondItem="pa2-yt-byN" secondAttribute="bottom" id="TUg-AZ-aa3"/>
+                            <constraint firstItem="pa2-yt-byN" firstAttribute="leading" secondItem="hQR-vJ-qXB" secondAttribute="leading" id="mSY-Zy-WDs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQR-vJ-qXB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zb7-3x-6WH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9G-u8-2ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423.19999999999999" y="-68.815592203898049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-podcast" width="29" height="29"/>
+    </resources>
+</document>

@@ -7,21 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65B0823FA52B6C8E69733504 /* Pods_TheAdventureDads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B769ADC159CA53E0C902A30A /* Pods_TheAdventureDads.framework */; };
 		E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A48C20B54E71001F580C /* AppDelegate.swift */; };
-		E880A48F20B54E71001F580C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A48E20B54E71001F580C /* ViewController.swift */; };
-		E880A49220B54E71001F580C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A49020B54E71001F580C /* Main.storyboard */; };
 		E880A49420B54E72001F580C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E880A49320B54E72001F580C /* Assets.xcassets */; };
 		E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A49520B54E72001F580C /* LaunchScreen.storyboard */; };
+		E880A4A920B54FDB001F580C /* FeedPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4A820B54FDB001F580C /* FeedPageController.swift */; };
+		E880A4AB20B54FF1001F580C /* FeedPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4AA20B54FF1001F580C /* FeedPageController.storyboard */; };
+		E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4AC20B55006001F580C /* VideoPageController.swift */; };
+		E880A4AF20B55018001F580C /* VideoPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4AE20B55018001F580C /* VideoPageController.storyboard */; };
+		E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B020B55030001F580C /* MeetupPageController.swift */; };
+		E880A4B320B5503D001F580C /* MeetupPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4B220B5503D001F580C /* MeetupPageController.storyboard */; };
+		E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B420B5504D001F580C /* TripsPageController.swift */; };
+		E880A4B720B5505B001F580C /* TripsPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4B620B5505B001F580C /* TripsPageController.storyboard */; };
+		E880A4B920B5506E001F580C /* PodcastPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B820B5506E001F580C /* PodcastPageController.swift */; };
+		E880A4BB20B55084001F580C /* PodcastPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BA20B55084001F580C /* PodcastPageController.storyboard */; };
+		E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4BC20B550AA001F580C /* TabBarController.swift */; };
+		E880A4BF20B550BA001F580C /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BE20B550BA001F580C /* TabBarController.storyboard */; };
+		E880A4C120B55126001F580C /* VideoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4C020B55126001F580C /* VideoFeedCell.swift */; };
+		E880A4CB20B552BB001F580C /* PodcastPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4CA20B552BB001F580C /* PodcastPageCell.swift */; };
+		E880A4D020B552DE001F580C /* MeetupPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4CF20B552DE001F580C /* MeetupPageCell.swift */; };
+		E880A4D520B55302001F580C /* TripPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4D420B55302001F580C /* TripPageCell.swift */; };
+		E880A4DC20B6760C001F580C /* FeedPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4DB20B6760C001F580C /* FeedPageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A234CDF04D0183FFC55DF34 /* Pods-TheAdventureDads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAdventureDads.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads.release.xcconfig"; sourceTree = "<group>"; };
+		96B2BB9081308E5B8A6C2E7F /* Pods-TheAdventureDads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAdventureDads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads.debug.xcconfig"; sourceTree = "<group>"; };
+		B769ADC159CA53E0C902A30A /* Pods_TheAdventureDads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheAdventureDads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E880A48920B54E71001F580C /* TheAdventureDads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAdventureDads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E880A48C20B54E71001F580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E880A48E20B54E71001F580C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E880A49120B54E71001F580C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E880A49320B54E72001F580C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E880A49620B54E72001F580C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E880A49820B54E73001F580C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E880A4A820B54FDB001F580C /* FeedPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPageController.swift; sourceTree = "<group>"; };
+		E880A4AA20B54FF1001F580C /* FeedPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedPageController.storyboard; sourceTree = "<group>"; };
+		E880A4AC20B55006001F580C /* VideoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageController.swift; sourceTree = "<group>"; };
+		E880A4AE20B55018001F580C /* VideoPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPageController.storyboard; sourceTree = "<group>"; };
+		E880A4B020B55030001F580C /* MeetupPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupPageController.swift; sourceTree = "<group>"; };
+		E880A4B220B5503D001F580C /* MeetupPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeetupPageController.storyboard; sourceTree = "<group>"; };
+		E880A4B420B5504D001F580C /* TripsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPageController.swift; sourceTree = "<group>"; };
+		E880A4B620B5505B001F580C /* TripsPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsPageController.storyboard; sourceTree = "<group>"; };
+		E880A4B820B5506E001F580C /* PodcastPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPageController.swift; sourceTree = "<group>"; };
+		E880A4BA20B55084001F580C /* PodcastPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodcastPageController.storyboard; sourceTree = "<group>"; };
+		E880A4BC20B550AA001F580C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E880A4BE20B550BA001F580C /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		E880A4C020B55126001F580C /* VideoFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedCell.swift; sourceTree = "<group>"; };
+		E880A4CA20B552BB001F580C /* PodcastPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPageCell.swift; sourceTree = "<group>"; };
+		E880A4CF20B552DE001F580C /* MeetupPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupPageCell.swift; sourceTree = "<group>"; };
+		E880A4D420B55302001F580C /* TripPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPageCell.swift; sourceTree = "<group>"; };
+		E880A4DB20B6760C001F580C /* FeedPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B0823FA52B6C8E69733504 /* Pods_TheAdventureDads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76714584E1CCFD0C133FC30C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96B2BB9081308E5B8A6C2E7F /* Pods-TheAdventureDads.debug.xcconfig */,
+				4A234CDF04D0183FFC55DF34 /* Pods-TheAdventureDads.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD7CC23309D8F1E589C789D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B769ADC159CA53E0C902A30A /* Pods_TheAdventureDads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E880A48020B54E71001F580C = {
 			isa = PBXGroup;
 			children = (
 				E880A48B20B54E71001F580C /* TheAdventureDads */,
 				E880A48A20B54E71001F580C /* Products */,
+				76714584E1CCFD0C133FC30C /* Pods */,
+				BD7CC23309D8F1E589C789D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +108,150 @@
 		E880A48B20B54E71001F580C /* TheAdventureDads */ = {
 			isa = PBXGroup;
 			children = (
-				E880A48C20B54E71001F580C /* AppDelegate.swift */,
-				E880A48E20B54E71001F580C /* ViewController.swift */,
-				E880A49020B54E71001F580C /* Main.storyboard */,
+				E880A49F20B54E90001F580C /* AppDelegate */,
+				E880A4A020B54EE2001F580C /* Modules */,
+				E880A49E20B54E7C001F580C /* Utilities */,
+			);
+			path = TheAdventureDads;
+			sourceTree = "<group>";
+		};
+		E880A49E20B54E7C001F580C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
 				E880A49320B54E72001F580C /* Assets.xcassets */,
 				E880A49520B54E72001F580C /* LaunchScreen.storyboard */,
 				E880A49820B54E73001F580C /* Info.plist */,
 			);
-			path = TheAdventureDads;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E880A49F20B54E90001F580C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E880A48C20B54E71001F580C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E880A4A020B54EE2001F580C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4A720B54F6D001F580C /* TabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E880A4A120B54EEB001F580C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4BC20B550AA001F580C /* TabBarController.swift */,
+				E880A4BE20B550BA001F580C /* TabBarController.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		E880A4A220B54EF4001F580C /* FeedPage */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4A820B54FDB001F580C /* FeedPageController.swift */,
+				E880A4AA20B54FF1001F580C /* FeedPageController.storyboard */,
+				E880A4DD20B67611001F580C /* Cell */,
+			);
+			path = FeedPage;
+			sourceTree = "<group>";
+		};
+		E880A4A320B54F08001F580C /* VideoPage */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4AC20B55006001F580C /* VideoPageController.swift */,
+				E880A4AE20B55018001F580C /* VideoPageController.storyboard */,
+				E880A4C420B5513A001F580C /* Cell */,
+			);
+			path = VideoPage;
+			sourceTree = "<group>";
+		};
+		E880A4A420B54F0F001F580C /* MeetupPage */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4B020B55030001F580C /* MeetupPageController.swift */,
+				E880A4B220B5503D001F580C /* MeetupPageController.storyboard */,
+				E880A4D320B552ED001F580C /* Cell */,
+			);
+			path = MeetupPage;
+			sourceTree = "<group>";
+		};
+		E880A4A520B54F19001F580C /* TripsPage */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4B420B5504D001F580C /* TripsPageController.swift */,
+				E880A4B620B5505B001F580C /* TripsPageController.storyboard */,
+				E880A4D820B55311001F580C /* Cell */,
+			);
+			path = TripsPage;
+			sourceTree = "<group>";
+		};
+		E880A4A620B54F3B001F580C /* PodcastPage */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4B820B5506E001F580C /* PodcastPageController.swift */,
+				E880A4BA20B55084001F580C /* PodcastPageController.storyboard */,
+				E880A4CE20B552CE001F580C /* Cell */,
+			);
+			path = PodcastPage;
+			sourceTree = "<group>";
+		};
+		E880A4A720B54F6D001F580C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4A120B54EEB001F580C /* Tabbar */,
+				E880A4A220B54EF4001F580C /* FeedPage */,
+				E880A4A320B54F08001F580C /* VideoPage */,
+				E880A4A520B54F19001F580C /* TripsPage */,
+				E880A4A620B54F3B001F580C /* PodcastPage */,
+				E880A4A420B54F0F001F580C /* MeetupPage */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E880A4C420B5513A001F580C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4C020B55126001F580C /* VideoFeedCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E880A4CE20B552CE001F580C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4CA20B552BB001F580C /* PodcastPageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E880A4D320B552ED001F580C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4CF20B552DE001F580C /* MeetupPageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E880A4D820B55311001F580C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4D420B55302001F580C /* TripPageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E880A4DD20B67611001F580C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E880A4DB20B6760C001F580C /* FeedPageCell.swift */,
+			);
+			name = Cell;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E880A49B20B54E73001F580C /* Build configuration list for PBXNativeTarget "TheAdventureDads" */;
 			buildPhases = (
+				8390F8EEB54FB57323B97A06 /* [CP] Check Pods Manifest.lock */,
 				E880A48520B54E71001F580C /* Sources */,
 				E880A48620B54E71001F580C /* Frameworks */,
 				E880A48720B54E71001F580C /* Resources */,
+				5BEB4C591404796AC1F204E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,35 +314,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E880A4BF20B550BA001F580C /* TabBarController.storyboard in Resources */,
 				E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */,
+				E880A4AF20B55018001F580C /* VideoPageController.storyboard in Resources */,
+				E880A4AB20B54FF1001F580C /* FeedPageController.storyboard in Resources */,
 				E880A49420B54E72001F580C /* Assets.xcassets in Resources */,
-				E880A49220B54E71001F580C /* Main.storyboard in Resources */,
+				E880A4BB20B55084001F580C /* PodcastPageController.storyboard in Resources */,
+				E880A4B320B5503D001F580C /* MeetupPageController.storyboard in Resources */,
+				E880A4B720B5505B001F580C /* TripsPageController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BEB4C591404796AC1F204E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8390F8EEB54FB57323B97A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheAdventureDads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E880A48520B54E71001F580C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E880A48F20B54E71001F580C /* ViewController.swift in Sources */,
+				E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */,
+				E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */,
+				E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */,
+				E880A4CB20B552BB001F580C /* PodcastPageCell.swift in Sources */,
+				E880A4A920B54FDB001F580C /* FeedPageController.swift in Sources */,
+				E880A4B920B5506E001F580C /* PodcastPageController.swift in Sources */,
+				E880A4DC20B6760C001F580C /* FeedPageCell.swift in Sources */,
 				E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */,
+				E880A4D020B552DE001F580C /* MeetupPageCell.swift in Sources */,
+				E880A4C120B55126001F580C /* VideoFeedCell.swift in Sources */,
+				E880A4D520B55302001F580C /* TripPageCell.swift in Sources */,
+				E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E880A49020B54E71001F580C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E880A49120B54E71001F580C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E880A49520B54E72001F580C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,10 +516,11 @@
 		};
 		E880A49C20B54E73001F580C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B2BB9081308E5B8A6C2E7F /* Pods-TheAdventureDads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheAdventureDads/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TheAdventureDads/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +534,11 @@
 		};
 		E880A49D20B54E73001F580C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A234CDF04D0183FFC55DF34 /* Pods-TheAdventureDads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheAdventureDads/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TheAdventureDads/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
