@@ -52,15 +52,15 @@
                                 <rect key="frame" x="10" y="100" width="355" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="299" id="2It-Yg-ylL">
-                                        <rect key="frame" x="0.0" y="28" width="355" height="299"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="334" id="2It-Yg-ylL" customClass="FeedCell" customModule="TheAdventureDads" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="334"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2It-Yg-ylL" id="N2Z-sW-tRf">
-                                            <rect key="frame" x="0.0" y="0.0" width="355" height="298.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="333.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rea-IJ-Ybh">
-                                                    <rect key="frame" x="0.0" y="199" width="355" height="89"/>
+                                                    <rect key="frame" x="0.0" y="234" width="355" height="89"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="srJ-Iz-hLQ"/>
@@ -70,7 +70,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-Dr-O1A">
-                                                    <rect key="frame" x="0.0" y="-9" width="355" height="208"/>
+                                                    <rect key="frame" x="0.0" y="-9" width="355" height="243"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -85,6 +85,10 @@
                                                 <constraint firstItem="uFu-Dr-O1A" firstAttribute="leading" secondItem="N2Z-sW-tRf" secondAttribute="leading" id="nfQ-ov-Nac"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedImage" destination="uFu-Dr-O1A" id="3Ht-7v-Rpt"/>
+                                            <outlet property="feedText" destination="rea-IJ-Ybh" id="vlV-vE-yeE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -106,7 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RwC-da-JrO"/>
                     <connections>
-                        <outlet property="tableView" destination="pEI-zI-vaE" id="V7K-zA-ap3"/>
+                        <outlet property="tableView" destination="pEI-zI-vaE" id="XCZ-89-gbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5i-D7-z8z" userLabel="First Responder" sceneMemberID="firstResponder"/>

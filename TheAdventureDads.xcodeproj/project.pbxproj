@@ -23,11 +23,7 @@
 		E880A4BB20B55084001F580C /* PodcastPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BA20B55084001F580C /* PodcastPageController.storyboard */; };
 		E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4BC20B550AA001F580C /* TabBarController.swift */; };
 		E880A4BF20B550BA001F580C /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BE20B550BA001F580C /* TabBarController.storyboard */; };
-		E880A4C120B55126001F580C /* VideoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4C020B55126001F580C /* VideoFeedCell.swift */; };
-		E880A4CB20B552BB001F580C /* PodcastPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4CA20B552BB001F580C /* PodcastPageCell.swift */; };
-		E880A4D020B552DE001F580C /* MeetupPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4CF20B552DE001F580C /* MeetupPageCell.swift */; };
-		E880A4D520B55302001F580C /* TripPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4D420B55302001F580C /* TripPageCell.swift */; };
-		E880A4DC20B6760C001F580C /* FeedPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4DB20B6760C001F580C /* FeedPageCell.swift */; };
+		E880A4E420BCD01C001F580C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4E320BCD01C001F580C /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +47,7 @@
 		E880A4BA20B55084001F580C /* PodcastPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodcastPageController.storyboard; sourceTree = "<group>"; };
 		E880A4BC20B550AA001F580C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E880A4BE20B550BA001F580C /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
-		E880A4C020B55126001F580C /* VideoFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedCell.swift; sourceTree = "<group>"; };
-		E880A4CA20B552BB001F580C /* PodcastPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPageCell.swift; sourceTree = "<group>"; };
-		E880A4CF20B552DE001F580C /* MeetupPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupPageCell.swift; sourceTree = "<group>"; };
-		E880A4D420B55302001F580C /* TripPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPageCell.swift; sourceTree = "<group>"; };
-		E880A4DB20B6760C001F580C /* FeedPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPageCell.swift; sourceTree = "<group>"; };
+		E880A4E320BCD01C001F580C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +147,7 @@
 			children = (
 				E880A4A820B54FDB001F580C /* FeedPageController.swift */,
 				E880A4AA20B54FF1001F580C /* FeedPageController.storyboard */,
-				E880A4DD20B67611001F580C /* Cell */,
+				E880A4E520BCD022001F580C /* Cell */,
 			);
 			path = FeedPage;
 			sourceTree = "<group>";
@@ -165,7 +157,6 @@
 			children = (
 				E880A4AC20B55006001F580C /* VideoPageController.swift */,
 				E880A4AE20B55018001F580C /* VideoPageController.storyboard */,
-				E880A4C420B5513A001F580C /* Cell */,
 			);
 			path = VideoPage;
 			sourceTree = "<group>";
@@ -175,7 +166,6 @@
 			children = (
 				E880A4B020B55030001F580C /* MeetupPageController.swift */,
 				E880A4B220B5503D001F580C /* MeetupPageController.storyboard */,
-				E880A4D320B552ED001F580C /* Cell */,
 			);
 			path = MeetupPage;
 			sourceTree = "<group>";
@@ -185,7 +175,6 @@
 			children = (
 				E880A4B420B5504D001F580C /* TripsPageController.swift */,
 				E880A4B620B5505B001F580C /* TripsPageController.storyboard */,
-				E880A4D820B55311001F580C /* Cell */,
 			);
 			path = TripsPage;
 			sourceTree = "<group>";
@@ -195,7 +184,6 @@
 			children = (
 				E880A4B820B5506E001F580C /* PodcastPageController.swift */,
 				E880A4BA20B55084001F580C /* PodcastPageController.storyboard */,
-				E880A4CE20B552CE001F580C /* Cell */,
 			);
 			path = PodcastPage;
 			sourceTree = "<group>";
@@ -213,45 +201,13 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		E880A4C420B5513A001F580C /* Cell */ = {
+		E880A4E520BCD022001F580C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E880A4C020B55126001F580C /* VideoFeedCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		E880A4CE20B552CE001F580C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E880A4CA20B552BB001F580C /* PodcastPageCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		E880A4D320B552ED001F580C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E880A4CF20B552DE001F580C /* MeetupPageCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		E880A4D820B55311001F580C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E880A4D420B55302001F580C /* TripPageCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		E880A4DD20B67611001F580C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E880A4DB20B6760C001F580C /* FeedPageCell.swift */,
+				E880A4E320BCD01C001F580C /* FeedCell.swift */,
 			);
 			name = Cell;
-			path = "New Group";
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,14 +330,10 @@
 				E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */,
 				E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */,
 				E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */,
-				E880A4CB20B552BB001F580C /* PodcastPageCell.swift in Sources */,
 				E880A4A920B54FDB001F580C /* FeedPageController.swift in Sources */,
 				E880A4B920B5506E001F580C /* PodcastPageController.swift in Sources */,
-				E880A4DC20B6760C001F580C /* FeedPageCell.swift in Sources */,
 				E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */,
-				E880A4D020B552DE001F580C /* MeetupPageCell.swift in Sources */,
-				E880A4C120B55126001F580C /* VideoFeedCell.swift in Sources */,
-				E880A4D520B55302001F580C /* TripPageCell.swift in Sources */,
+				E880A4E420BCD01C001F580C /* FeedCell.swift in Sources */,
 				E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

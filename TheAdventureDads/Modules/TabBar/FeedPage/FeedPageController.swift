@@ -13,11 +13,7 @@ struct Feed: Decodable {
     let name: String
     let imageUrl: String
     
-//    init (json: [String: Any]) {
-//        id = json["id"] as? Int ?? -1
-//        name = json["username"] as? String ?? ""
-//        imageUrl = json["profile_picture"] as? String ?? ""
-//    }
+
 }
 
 final class FeedPageController: UIViewController {
@@ -25,7 +21,8 @@ final class FeedPageController: UIViewController {
     @IBAction func switchCustomTableViewAction(_ sender: UISegmentedControl) {
     }
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
+
     
     //MARK: Initialization
     override func viewDidLoad() {
@@ -58,6 +55,7 @@ final class FeedPageController: UIViewController {
             
             }.resume()
         
+        print(url)
         }
     
     
