@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		65B0823FA52B6C8E69733504 /* Pods_TheAdventureDads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B769ADC159CA53E0C902A30A /* Pods_TheAdventureDads.framework */; };
+		E82B870F20D61EA5009E44D4 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B870E20D61EA5009E44D4 /* TripCell.swift */; };
+		E82B871220D61EC7009E44D4 /* MeetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B871120D61EC7009E44D4 /* MeetupCell.swift */; };
+		E83191F120CDD5B600CA7CBE /* InstagramFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83191F020CDD5B600CA7CBE /* InstagramFeed.swift */; };
+		E83191F320CDECD800CA7CBE /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83191F220CDECD800CA7CBE /* VideoCell.swift */; };
+		E83191F620CE70B800CA7CBE /* YoutubeFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83191F520CE70B800CA7CBE /* YoutubeFeed.swift */; };
+		E8447E0320D5D30C00317A57 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8447E0520D5D30C00317A57 /* TabBarController.storyboard */; };
+		E8447E0720D5F2C900317A57 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8447E0620D5F2C900317A57 /* PodcastCell.swift */; };
+		E8447E0A20D5FC8D00317A57 /* PodcastFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8447E0920D5FC8D00317A57 /* PodcastFeed.swift */; };
 		E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A48C20B54E71001F580C /* AppDelegate.swift */; };
 		E880A49420B54E72001F580C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E880A49320B54E72001F580C /* Assets.xcassets */; };
 		E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A49520B54E72001F580C /* LaunchScreen.storyboard */; };
@@ -16,20 +24,26 @@
 		E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4AC20B55006001F580C /* VideoPageController.swift */; };
 		E880A4AF20B55018001F580C /* VideoPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4AE20B55018001F580C /* VideoPageController.storyboard */; };
 		E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B020B55030001F580C /* MeetupPageController.swift */; };
-		E880A4B320B5503D001F580C /* MeetupPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4B220B5503D001F580C /* MeetupPageController.storyboard */; };
 		E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B420B5504D001F580C /* TripsPageController.swift */; };
 		E880A4B720B5505B001F580C /* TripsPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4B620B5505B001F580C /* TripsPageController.storyboard */; };
 		E880A4B920B5506E001F580C /* PodcastPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4B820B5506E001F580C /* PodcastPageController.swift */; };
 		E880A4BB20B55084001F580C /* PodcastPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BA20B55084001F580C /* PodcastPageController.storyboard */; };
-		E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4BC20B550AA001F580C /* TabBarController.swift */; };
-		E880A4BF20B550BA001F580C /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A4BE20B550BA001F580C /* TabBarController.storyboard */; };
 		E880A4E420BCD01C001F580C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A4E320BCD01C001F580C /* FeedCell.swift */; };
+		E8F7B11420D654C1000A929D /* MeetupPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F7B11320D654C1000A929D /* MeetupPageController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A234CDF04D0183FFC55DF34 /* Pods-TheAdventureDads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAdventureDads.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads.release.xcconfig"; sourceTree = "<group>"; };
 		96B2BB9081308E5B8A6C2E7F /* Pods-TheAdventureDads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAdventureDads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads.debug.xcconfig"; sourceTree = "<group>"; };
 		B769ADC159CA53E0C902A30A /* Pods_TheAdventureDads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheAdventureDads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82B870E20D61EA5009E44D4 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
+		E82B871120D61EC7009E44D4 /* MeetupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupCell.swift; sourceTree = "<group>"; };
+		E83191F020CDD5B600CA7CBE /* InstagramFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramFeed.swift; sourceTree = "<group>"; };
+		E83191F220CDECD800CA7CBE /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		E83191F520CE70B800CA7CBE /* YoutubeFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeFeed.swift; sourceTree = "<group>"; };
+		E8447E0420D5D30C00317A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarController.storyboard; sourceTree = "<group>"; };
+		E8447E0620D5F2C900317A57 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		E8447E0920D5FC8D00317A57 /* PodcastFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastFeed.swift; sourceTree = "<group>"; };
 		E880A48920B54E71001F580C /* TheAdventureDads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAdventureDads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E880A48C20B54E71001F580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E880A49320B54E72001F580C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,14 +54,12 @@
 		E880A4AC20B55006001F580C /* VideoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageController.swift; sourceTree = "<group>"; };
 		E880A4AE20B55018001F580C /* VideoPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPageController.storyboard; sourceTree = "<group>"; };
 		E880A4B020B55030001F580C /* MeetupPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupPageController.swift; sourceTree = "<group>"; };
-		E880A4B220B5503D001F580C /* MeetupPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeetupPageController.storyboard; sourceTree = "<group>"; };
 		E880A4B420B5504D001F580C /* TripsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPageController.swift; sourceTree = "<group>"; };
 		E880A4B620B5505B001F580C /* TripsPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsPageController.storyboard; sourceTree = "<group>"; };
 		E880A4B820B5506E001F580C /* PodcastPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPageController.swift; sourceTree = "<group>"; };
 		E880A4BA20B55084001F580C /* PodcastPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodcastPageController.storyboard; sourceTree = "<group>"; };
-		E880A4BC20B550AA001F580C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		E880A4BE20B550BA001F580C /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		E880A4E320BCD01C001F580C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		E8F7B11320D654C1000A929D /* MeetupPageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeetupPageController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E82B871020D61EAA009E44D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E82B870E20D61EA5009E44D4 /* TripCell.swift */,
+			);
+			name = Cell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E82B871320D61ECD009E44D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E82B871120D61EC7009E44D4 /* MeetupCell.swift */,
+			);
+			name = Cell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E83191EF20CDD4FA00CA7CBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E83191F020CDD5B600CA7CBE /* InstagramFeed.swift */,
+				E83191F520CE70B800CA7CBE /* YoutubeFeed.swift */,
+				E8447E0920D5FC8D00317A57 /* PodcastFeed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E83191F420CDECDF00CA7CBE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E83191F220CDECD800CA7CBE /* VideoCell.swift */,
+			);
+			name = Cell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E8447E0820D5F2D000317A57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E8447E0620D5F2C900317A57 /* PodcastCell.swift */,
+			);
+			name = Cell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E880A48020B54E71001F580C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +158,7 @@
 		E880A48B20B54E71001F580C /* TheAdventureDads */ = {
 			isa = PBXGroup;
 			children = (
+				E83191EF20CDD4FA00CA7CBE /* Models */,
 				E880A49F20B54E90001F580C /* AppDelegate */,
 				E880A4A020B54EE2001F580C /* Modules */,
 				E880A49E20B54E7C001F580C /* Utilities */,
@@ -136,8 +195,7 @@
 		E880A4A120B54EEB001F580C /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				E880A4BC20B550AA001F580C /* TabBarController.swift */,
-				E880A4BE20B550BA001F580C /* TabBarController.storyboard */,
+				E8447E0520D5D30C00317A57 /* TabBarController.storyboard */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -157,6 +215,7 @@
 			children = (
 				E880A4AC20B55006001F580C /* VideoPageController.swift */,
 				E880A4AE20B55018001F580C /* VideoPageController.storyboard */,
+				E83191F420CDECDF00CA7CBE /* Cell */,
 			);
 			path = VideoPage;
 			sourceTree = "<group>";
@@ -165,7 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				E880A4B020B55030001F580C /* MeetupPageController.swift */,
-				E880A4B220B5503D001F580C /* MeetupPageController.storyboard */,
+				E8F7B11320D654C1000A929D /* MeetupPageController.storyboard */,
+				E82B871320D61ECD009E44D4 /* Cell */,
 			);
 			path = MeetupPage;
 			sourceTree = "<group>";
@@ -175,6 +235,7 @@
 			children = (
 				E880A4B420B5504D001F580C /* TripsPageController.swift */,
 				E880A4B620B5505B001F580C /* TripsPageController.storyboard */,
+				E82B871020D61EAA009E44D4 /* Cell */,
 			);
 			path = TripsPage;
 			sourceTree = "<group>";
@@ -184,6 +245,7 @@
 			children = (
 				E880A4B820B5506E001F580C /* PodcastPageController.swift */,
 				E880A4BA20B55084001F580C /* PodcastPageController.storyboard */,
+				E8447E0820D5F2D000317A57 /* Cell */,
 			);
 			path = PodcastPage;
 			sourceTree = "<group>";
@@ -270,14 +332,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E880A4BF20B550BA001F580C /* TabBarController.storyboard in Resources */,
+				E8447E0320D5D30C00317A57 /* TabBarController.storyboard in Resources */,
 				E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */,
 				E880A4AF20B55018001F580C /* VideoPageController.storyboard in Resources */,
 				E880A4AB20B54FF1001F580C /* FeedPageController.storyboard in Resources */,
 				E880A49420B54E72001F580C /* Assets.xcassets in Resources */,
 				E880A4BB20B55084001F580C /* PodcastPageController.storyboard in Resources */,
-				E880A4B320B5503D001F580C /* MeetupPageController.storyboard in Resources */,
 				E880A4B720B5505B001F580C /* TripsPageController.storyboard in Resources */,
+				E8F7B11420D654C1000A929D /* MeetupPageController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +354,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,20 +395,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82B870F20D61EA5009E44D4 /* TripCell.swift in Sources */,
 				E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */,
-				E880A4BD20B550AA001F580C /* TabBarController.swift in Sources */,
+				E83191F120CDD5B600CA7CBE /* InstagramFeed.swift in Sources */,
+				E83191F620CE70B800CA7CBE /* YoutubeFeed.swift in Sources */,
 				E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */,
 				E880A4A920B54FDB001F580C /* FeedPageController.swift in Sources */,
+				E83191F320CDECD800CA7CBE /* VideoCell.swift in Sources */,
 				E880A4B920B5506E001F580C /* PodcastPageController.swift in Sources */,
 				E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */,
+				E8447E0720D5F2C900317A57 /* PodcastCell.swift in Sources */,
 				E880A4E420BCD01C001F580C /* FeedCell.swift in Sources */,
+				E8447E0A20D5FC8D00317A57 /* PodcastFeed.swift in Sources */,
 				E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */,
+				E82B871220D61EC7009E44D4 /* MeetupCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E8447E0520D5D30C00317A57 /* TabBarController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8447E0420D5D30C00317A57 /* Base */,
+			);
+			name = TabBarController.storyboard;
+			sourceTree = "<group>";
+		};
 		E880A49520B54E72001F580C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -11,6 +11,4 @@ import UIKit
 class FeedCell: UITableViewCell {
     @IBOutlet var feedImage: UIImageView!
     @IBOutlet var feedText: UITextView!
-    
-    
 }

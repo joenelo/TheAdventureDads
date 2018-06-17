@@ -6,16 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meetup-->
+        <!--Meetups-->
         <scene sceneID="0tP-gt-wKJ">
             <objects>
                 <navigationController id="MUP-22-6Xj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meetup" image="icon-meetup" id="L8S-yh-aZW"/>
+                    <tabBarItem key="tabBarItem" title="Meetups" image="meeting" id="L8S-yh-aZW"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OeF-SZ-BOj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -32,59 +32,81 @@
         <!--Meetup Page Controller-->
         <scene sceneID="2wl-xM-smg">
             <objects>
-                <viewController storyboardIdentifier="MeetupPage" id="KfB-2w-RcQ" customClass="MeetupPageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeetupPage" id="KfB-2w-RcQ" customClass="MeetupPageController" customModule="TheAdventureDads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fPN-zU-ZJx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-m5-tMd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-m5-tMd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="166" id="xeu-Yf-tLw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeetupCell" rowHeight="166" id="xeu-Yf-tLw" customClass="MeetupCell" customModule="TheAdventureDads" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="166"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xeu-Yf-tLw" id="s24-1V-xKN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-vk-hOz">
-                                                    <rect key="frame" x="15" y="16" width="128" height="134"/>
-                                                </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5gH-Qb-Ncv">
-                                                    <rect key="frame" x="151" y="16" width="224" height="47"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xpI-of-D7j">
-                                                    <rect key="frame" x="151" y="62" width="224" height="43"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0CE-dc-xrd">
-                                                    <rect key="frame" x="151" y="107" width="224" height="43"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLE-2a-ebc">
+                                                    <rect key="frame" x="0.0" y="7" width="375" height="151.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-vk-hOz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="151" height="151.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="151.5" id="Izt-IL-IRR"/>
+                                                                <constraint firstAttribute="height" constant="151.5" id="YtQ-m1-89x"/>
+                                                                <constraint firstAttribute="width" secondItem="IIl-vk-hOz" secondAttribute="height" multiplier="1:1" id="lkT-iH-fes"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-MC-YkW">
+                                                            <rect key="frame" x="151" y="0.0" width="224" height="151.5"/>
+                                                            <subviews>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5gH-Qb-Ncv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="224" height="50.5"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xpI-of-D7j">
+                                                                    <rect key="frame" x="0.0" y="50.5" width="224" height="50.5"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0CE-dc-xrd">
+                                                                    <rect key="frame" x="0.0" y="101" width="224" height="50.5"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0CE-dc-xrd" firstAttribute="height" secondItem="5gH-Qb-Ncv" secondAttribute="height" id="839-M5-6W3"/>
-                                                <constraint firstItem="xpI-of-D7j" firstAttribute="width" secondItem="5gH-Qb-Ncv" secondAttribute="width" id="Jox-G5-bzw"/>
-                                                <constraint firstItem="IIl-vk-hOz" firstAttribute="leading" secondItem="s24-1V-xKN" secondAttribute="leadingMargin" constant="5" id="Qj8-db-H33"/>
-                                                <constraint firstItem="xpI-of-D7j" firstAttribute="height" secondItem="5gH-Qb-Ncv" secondAttribute="height" id="Rtg-wK-NGv"/>
-                                                <constraint firstItem="IIl-vk-hOz" firstAttribute="top" secondItem="s24-1V-xKN" secondAttribute="topMargin" constant="5" id="azf-mi-qc9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="IIl-vk-hOz" secondAttribute="bottom" constant="5" id="hdg-U0-aHP"/>
-                                                <constraint firstItem="0CE-dc-xrd" firstAttribute="width" secondItem="5gH-Qb-Ncv" secondAttribute="width" id="sAe-t7-y8j"/>
+                                                <constraint firstAttribute="trailing" secondItem="VLE-2a-ebc" secondAttribute="trailing" id="5Xw-71-pgY"/>
+                                                <constraint firstItem="VLE-2a-ebc" firstAttribute="top" secondItem="s24-1V-xKN" secondAttribute="top" constant="7" id="fRh-8N-eLa"/>
+                                                <constraint firstAttribute="bottom" secondItem="VLE-2a-ebc" secondAttribute="bottom" constant="7" id="pVI-FP-sOc"/>
+                                                <constraint firstItem="VLE-2a-ebc" firstAttribute="leading" secondItem="s24-1V-xKN" secondAttribute="leading" id="tyG-Gi-rH0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellDate" destination="xpI-of-D7j" id="bj1-qi-A8y"/>
+                                            <outlet property="cellImageView" destination="IIl-vk-hOz" id="yey-tl-EvA"/>
+                                            <outlet property="cellLocated" destination="0CE-dc-xrd" id="AC6-7P-jcm"/>
+                                            <outlet property="cellTripName" destination="5gH-Qb-Ncv" id="lnZ-z6-ae7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KfB-2w-RcQ" id="Pwi-sj-EOB"/>
+                                    <outlet property="delegate" destination="KfB-2w-RcQ" id="sMJ-tb-adU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,6 +119,9 @@
                         <viewLayoutGuide key="safeArea" id="LN7-MN-aW1"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rcf-Pw-9hc"/>
+                    <connections>
+                        <outlet property="tableView" destination="SO2-m5-tMd" id="9ci-SO-wGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZD-s1-HrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +129,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-meetup" width="29" height="29"/>
+        <image name="meeting" width="30" height="30"/>
     </resources>
 </document>

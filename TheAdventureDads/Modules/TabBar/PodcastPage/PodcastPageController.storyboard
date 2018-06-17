@@ -14,11 +14,12 @@
         <scene sceneID="52M-Ql-geX">
             <objects>
                 <navigationController id="tsE-bK-iiL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Podcasts" image="icon-podcast" id="AoS-Ma-4sw"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="browse_podcasts" id="AoS-Ma-4sw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QT4-r2-LzE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.123049228" green="0.53787277919999998" blue="0.01223270091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="aEJ-LN-B3f" kind="relationship" relationship="rootViewController" id="L8F-5j-Fdi"/>
@@ -28,59 +29,85 @@
             </objects>
             <point key="canvasLocation" x="-682" y="-26"/>
         </scene>
-        <!--Podcast Page Controller-->
+        <!--Podcasts-->
         <scene sceneID="qoa-Hk-bDx">
             <objects>
-                <viewController storyboardIdentifier="PodcastPage" id="aEJ-LN-B3f" customClass="PodcastPageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PodcastPage" id="aEJ-LN-B3f" customClass="PodcastController" customModule="TheAdventureDads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1C-bm-s8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pa2-yt-byN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="12" y="64" width="351" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nPI-dE-jgo">
-                                    <size key="itemSize" width="186" height="178"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bJD-zl-j9s">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qbb-wB-hP9">
-                                        <rect key="frame" x="94.5" y="0.0" width="186" height="178"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PodcastCell" id="Qbb-wB-hP9" customClass="PodcastCell" customModule="TheAdventureDads" customModuleProvider="target">
+                                        <rect key="frame" x="82.5" y="0.0" width="186" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="186" height="178"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBa-JJ-E2g">
-                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="133"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Which Podcst" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Du-TTz">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpv-QD-Zc0" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="131"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Which Podcst" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Du-TTz">
                                                     <rect key="frame" x="0.0" y="132" width="186" height="46"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ifo-Du-TTz" secondAttribute="trailing" id="AmG-fC-bWq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jpv-QD-Zc0" secondAttribute="trailing" id="CKS-hi-N2p"/>
+                                            <constraint firstItem="ifo-Du-TTz" firstAttribute="top" secondItem="Jpv-QD-Zc0" secondAttribute="bottom" constant="1" id="Dl7-Hg-eqW"/>
+                                            <constraint firstItem="Jpv-QD-Zc0" firstAttribute="top" secondItem="Qbb-wB-hP9" secondAttribute="top" constant="15" id="JK5-xe-XQi"/>
+                                            <constraint firstAttribute="bottom" secondItem="ifo-Du-TTz" secondAttribute="bottom" id="KHH-jH-t4p"/>
+                                            <constraint firstItem="Jpv-QD-Zc0" firstAttribute="leading" secondItem="Qbb-wB-hP9" secondAttribute="leading" id="NxL-YT-xHa"/>
+                                            <constraint firstItem="ifo-Du-TTz" firstAttribute="top" secondItem="Jpv-QD-Zc0" secondAttribute="bottom" constant="1" id="nb4-bs-hOW"/>
+                                            <constraint firstItem="ifo-Du-TTz" firstAttribute="leading" secondItem="Qbb-wB-hP9" secondAttribute="leading" id="vTh-MF-WW9"/>
+                                        </constraints>
                                         <size key="customSize" width="186" height="178"/>
+                                        <connections>
+                                            <outlet property="podcastPlayer" destination="Jpv-QD-Zc0" id="5by-5g-ilC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="aEJ-LN-B3f" id="Izl-2B-heB"/>
+                                    <outlet property="delegate" destination="aEJ-LN-B3f" id="1Cm-4h-JwS"/>
+                                </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HMx-6o-AAe">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hQR-vJ-qXB" firstAttribute="trailing" secondItem="pa2-yt-byN" secondAttribute="trailing" id="FWA-jg-TTN"/>
+                            <constraint firstItem="hQR-vJ-qXB" firstAttribute="trailing" secondItem="pa2-yt-byN" secondAttribute="trailing" constant="12" id="FWA-jg-TTN"/>
                             <constraint firstItem="pa2-yt-byN" firstAttribute="top" secondItem="hQR-vJ-qXB" secondAttribute="top" id="JtQ-bB-Q1D"/>
+                            <constraint firstItem="HMx-6o-AAe" firstAttribute="centerY" secondItem="b1C-bm-s8s" secondAttribute="centerY" id="RqZ-YA-YeZ"/>
                             <constraint firstItem="hQR-vJ-qXB" firstAttribute="bottom" secondItem="pa2-yt-byN" secondAttribute="bottom" id="TUg-AZ-aa3"/>
-                            <constraint firstItem="pa2-yt-byN" firstAttribute="leading" secondItem="hQR-vJ-qXB" secondAttribute="leading" id="mSY-Zy-WDs"/>
+                            <constraint firstItem="pa2-yt-byN" firstAttribute="leading" secondItem="hQR-vJ-qXB" secondAttribute="leading" constant="12" id="mSY-Zy-WDs"/>
+                            <constraint firstItem="HMx-6o-AAe" firstAttribute="centerX" secondItem="b1C-bm-s8s" secondAttribute="centerX" id="tiF-Og-prB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hQR-vJ-qXB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zb7-3x-6WH"/>
+                    <navigationItem key="navigationItem" title="Podcasts" id="zb7-3x-6WH" userLabel="Podcasts"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="HMx-6o-AAe" id="oCM-a7-l9A"/>
+                        <outlet property="collectionView" destination="pa2-yt-byN" id="TJ4-qJ-HD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9G-u8-2ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-podcast" width="29" height="29"/>
+        <image name="browse_podcasts" width="30" height="30"/>
     </resources>
 </document>

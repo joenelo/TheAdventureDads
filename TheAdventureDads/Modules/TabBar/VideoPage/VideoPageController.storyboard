@@ -10,15 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Video-->
+        <!--Videos-->
         <scene sceneID="T1O-84-N06">
             <objects>
                 <navigationController id="YcR-aJ-sQr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Video" image="icon-video" id="6tV-Bv-CnT"/>
+                    <tabBarItem key="tabBarItem" title="Videos" image="Movie" id="6tV-Bv-CnT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jne-Vq-x5T">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.123049228" green="0.53787277919999998" blue="0.01223270091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="jEb-Gl-4lR" kind="relationship" relationship="rootViewController" id="f0f-Ln-CzO"/>
@@ -28,39 +29,68 @@
             </objects>
             <point key="canvasLocation" x="-670" y="115"/>
         </scene>
-        <!--Video Page Controller-->
+        <!--Video Page-->
         <scene sceneID="vmu-7x-VjD">
             <objects>
-                <viewController storyboardIdentifier="VideoPage" id="jEb-Gl-4lR" customClass="VideoPageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoPage" id="jEb-Gl-4lR" customClass="VideoPageController" customModule="TheAdventureDads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6dz-IR-c7D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-XR-JhD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-XR-JhD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="202" id="0f6-2A-esI">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="202"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="526" id="0f6-2A-esI" customClass="VideoCell" customModule="TheAdventureDads" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="526"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0f6-2A-esI" id="M8J-ny-xmF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="201.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flx-Rd-kFN" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                    <rect key="frame" x="15" y="15" width="345" height="495.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="flx-Rd-kFN" secondAttribute="trailing" constant="15" id="8aA-Xv-fwy"/>
+                                                <constraint firstItem="flx-Rd-kFN" firstAttribute="top" secondItem="M8J-ny-xmF" secondAttribute="top" constant="15" id="Gh4-P9-a12"/>
+                                                <constraint firstAttribute="bottom" secondItem="flx-Rd-kFN" secondAttribute="bottom" constant="15" id="LZc-va-JzY"/>
+                                                <constraint firstItem="flx-Rd-kFN" firstAttribute="leading" secondItem="M8J-ny-xmF" secondAttribute="leading" constant="15" id="l8H-tl-wZN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPlayer" destination="flx-Rd-kFN" id="RPr-Dv-mls"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jEb-Gl-4lR" id="yPW-0G-usg"/>
+                                    <outlet property="delegate" destination="jEb-Gl-4lR" id="n3h-jF-1Gj"/>
+                                </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-WF-K32">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gQz-XR-JhD" firstAttribute="top" secondItem="0b8-Fh-q33" secondAttribute="top" id="7zo-Gj-ivW"/>
                             <constraint firstItem="0b8-Fh-q33" firstAttribute="bottom" secondItem="gQz-XR-JhD" secondAttribute="bottom" id="Ipz-bL-80O"/>
+                            <constraint firstItem="ikw-WF-K32" firstAttribute="centerX" secondItem="6dz-IR-c7D" secondAttribute="centerX" id="M2e-hi-BYa"/>
+                            <constraint firstItem="ikw-WF-K32" firstAttribute="centerY" secondItem="6dz-IR-c7D" secondAttribute="centerY" id="ffD-cT-i6f"/>
                             <constraint firstItem="gQz-XR-JhD" firstAttribute="leading" secondItem="0b8-Fh-q33" secondAttribute="leading" id="g5V-43-RIY"/>
                             <constraint firstItem="0b8-Fh-q33" firstAttribute="trailing" secondItem="gQz-XR-JhD" secondAttribute="trailing" id="pZc-0f-gae"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0b8-Fh-q33"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iwS-Bu-Hew"/>
+                    <navigationItem key="navigationItem" title="Video Page" id="iwS-Bu-Hew"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ikw-WF-K32" id="S58-ac-HUI"/>
+                        <outlet property="tableView" destination="gQz-XR-JhD" id="3mE-MK-plu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYQ-rp-f1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +98,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-video" width="29" height="29"/>
+        <image name="Movie" width="30" height="30"/>
     </resources>
 </document>
