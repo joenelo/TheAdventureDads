@@ -16,6 +16,9 @@
 		E8447E0320D5D30C00317A57 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8447E0520D5D30C00317A57 /* TabBarController.storyboard */; };
 		E8447E0720D5F2C900317A57 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8447E0620D5F2C900317A57 /* PodcastCell.swift */; };
 		E8447E0A20D5FC8D00317A57 /* PodcastFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8447E0920D5FC8D00317A57 /* PodcastFeed.swift */; };
+		E87A112320DB01470073E978 /* MeetupPageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A112220DB01470073E978 /* MeetupPageDetailController.swift */; };
+		E87A112520DB05B30073E978 /* Mappin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A112420DB05B30073E978 /* Mappin.swift */; };
+		E87A112A20E0E5210073E978 /* GoogleService-Info (4).plist in Resources */ = {isa = PBXBuildFile; fileRef = E87A112920E0E5210073E978 /* GoogleService-Info (4).plist */; };
 		E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880A48C20B54E71001F580C /* AppDelegate.swift */; };
 		E880A49420B54E72001F580C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E880A49320B54E72001F580C /* Assets.xcassets */; };
 		E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E880A49520B54E72001F580C /* LaunchScreen.storyboard */; };
@@ -44,6 +47,9 @@
 		E8447E0420D5D30C00317A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarController.storyboard; sourceTree = "<group>"; };
 		E8447E0620D5F2C900317A57 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
 		E8447E0920D5FC8D00317A57 /* PodcastFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastFeed.swift; sourceTree = "<group>"; };
+		E87A112220DB01470073E978 /* MeetupPageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupPageDetailController.swift; sourceTree = "<group>"; };
+		E87A112420DB05B30073E978 /* Mappin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappin.swift; sourceTree = "<group>"; };
+		E87A112920E0E5210073E978 /* GoogleService-Info (4).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (4).plist"; path = "../../../Downloads/GoogleService-Info (4).plist"; sourceTree = "<group>"; };
 		E880A48920B54E71001F580C /* TheAdventureDads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAdventureDads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E880A48C20B54E71001F580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E880A49320B54E72001F580C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,9 +143,18 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		E87A112620DB05BB0073E978 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				E87A112420DB05B30073E978 /* Mappin.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
 		E880A48020B54E71001F580C = {
 			isa = PBXGroup;
 			children = (
+				E87A112920E0E5210073E978 /* GoogleService-Info (4).plist */,
 				E880A48B20B54E71001F580C /* TheAdventureDads */,
 				E880A48A20B54E71001F580C /* Products */,
 				76714584E1CCFD0C133FC30C /* Pods */,
@@ -225,7 +240,9 @@
 			children = (
 				E880A4B020B55030001F580C /* MeetupPageController.swift */,
 				E8F7B11320D654C1000A929D /* MeetupPageController.storyboard */,
+				E87A112220DB01470073E978 /* MeetupPageDetailController.swift */,
 				E82B871320D61ECD009E44D4 /* Cell */,
+				E87A112620DB05BB0073E978 /* Pin */,
 			);
 			path = MeetupPage;
 			sourceTree = "<group>";
@@ -333,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8447E0320D5D30C00317A57 /* TabBarController.storyboard in Resources */,
+				E87A112A20E0E5210073E978 /* GoogleService-Info (4).plist in Resources */,
 				E880A49720B54E72001F580C /* LaunchScreen.storyboard in Resources */,
 				E880A4AF20B55018001F580C /* VideoPageController.storyboard in Resources */,
 				E880A4AB20B54FF1001F580C /* FeedPageController.storyboard in Resources */,
@@ -354,16 +372,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TheAdventureDads/Pods-TheAdventureDads-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,6 +421,7 @@
 				E880A4B120B55030001F580C /* MeetupPageController.swift in Sources */,
 				E83191F120CDD5B600CA7CBE /* InstagramFeed.swift in Sources */,
 				E83191F620CE70B800CA7CBE /* YoutubeFeed.swift in Sources */,
+				E87A112320DB01470073E978 /* MeetupPageDetailController.swift in Sources */,
 				E880A4AD20B55006001F580C /* VideoPageController.swift in Sources */,
 				E880A4A920B54FDB001F580C /* FeedPageController.swift in Sources */,
 				E83191F320CDECD800CA7CBE /* VideoCell.swift in Sources */,
@@ -406,6 +429,7 @@
 				E880A48D20B54E71001F580C /* AppDelegate.swift in Sources */,
 				E8447E0720D5F2C900317A57 /* PodcastCell.swift in Sources */,
 				E880A4E420BCD01C001F580C /* FeedCell.swift in Sources */,
+				E87A112520DB05B30073E978 /* Mappin.swift in Sources */,
 				E8447E0A20D5FC8D00317A57 /* PodcastFeed.swift in Sources */,
 				E880A4B520B5504D001F580C /* TripsPageController.swift in Sources */,
 				E82B871220D61EC7009E44D4 /* MeetupCell.swift in Sources */,

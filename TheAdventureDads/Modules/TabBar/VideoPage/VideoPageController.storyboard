@@ -75,7 +75,7 @@
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gQz-XR-JhD" firstAttribute="top" secondItem="0b8-Fh-q33" secondAttribute="top" id="7zo-Gj-ivW"/>
                             <constraint firstItem="0b8-Fh-q33" firstAttribute="bottom" secondItem="gQz-XR-JhD" secondAttribute="bottom" id="Ipz-bL-80O"/>
